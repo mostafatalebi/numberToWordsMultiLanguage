@@ -6,7 +6,7 @@ echo "<meta charset='utf8' />";
 /**
  * Using the NumberToWords in its default mode.
  */
-$numberToWords = new \MT\Libraries\NumberToStringUtility();
+$numberToWords = new \MT\Libraries\NumberToWordsUtility();
 $number = 15847855;
 $result = $numberToWords->runProcessor($number);
 print "This is the number: <strong>{$number}</strong><br />This is its literal equivalence: <strong>{$result}</strong><br />";
@@ -16,7 +16,7 @@ print "This is the number: <strong>{$number}</strong><br />This is its literal e
 /**
  * Change the language on the fly
  */
-$numberToWords = new \MT\Libraries\NumberToStringUtility();
+$numberToWords = new \MT\Libraries\NumberToWordsUtility();
 $number = 15847855;
 $result = $numberToWords->setCurrentLanguage("fa")->runProcessor($number);
 print "This is the number: <strong>{$number}</strong><br />This is its literal equivalence: <strong>{$result}</strong><br />";

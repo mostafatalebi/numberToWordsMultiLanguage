@@ -5,10 +5,10 @@
  * @email most.talebi@gmail.com
  * @desc A multi-language tool which parses the numbers into fully
  * qualified literal words. It can be used for any number.
- * Class NumberToStringUtility
+ * Class NumberToWordsUtility
  * @package MT\Libraries
  */
-class NumberToStringUtility
+class NumberToWordsUtility
 {
     public $languageUtiliy;
 
@@ -17,13 +17,13 @@ class NumberToStringUtility
     protected $conjunctive_phrase;
 
     /**
-     * An instance of NumberToStringUtility
-     * NumberToStringUtility constructor.
+     * An instance of NumberToWordsUtility
+     * NumberToWordsUtility constructor.
      * @param string $language_in_use a two letters sign of the language
      */
     function __construct($language_in_use = "en")
     {
-        $this->languageUtiliy = new NumberToStringLanguage($language_in_use);
+        $this->languageUtiliy = new NumberToWordsLanguage($language_in_use);
         $this->number_category = $this->languageUtiliy->number_category;
         $this->conjunctive_phrase = $this->languageUtiliy->conjunctive_phrase;
 

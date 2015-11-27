@@ -3,10 +3,10 @@ use Symfony\Component\Config\Definition\Exception\Exception;
 
 
 /**
- * Class NumberToStringLanguage
+ * Class NumberToWordsLanguage
  * @package MT\Libraries
  */
-class NumberToStringLanguage
+class NumberToWordsLanguage
 {
 
     protected $configurations;
@@ -85,7 +85,7 @@ class NumberToStringLanguage
      * @param $value the string, literal value of the number
      * @param $language the language which is going to have this new
      * equivalence (or override its existing equivalence)
-     * @return NumberToStringLanguage
+     * @return NumberToWordsLanguage
      */
     function setNumberLiteralEquivalent($number, $value, $language)
     {
@@ -107,7 +107,7 @@ class NumberToStringLanguage
      * Setting the current language. Use a two letters for
      * representing the main language.
      * @param $current_language
-     * @return NumberToStringLanguage
+     * @return NumberToWordsLanguage
      */
     function setCurrentLanguage($current_language)
     {
