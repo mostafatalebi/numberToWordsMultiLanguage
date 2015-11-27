@@ -117,12 +117,12 @@ class NumberToWordsLanguage
     }
 
 
-    function isConjunctionAllowed($length)
-    {
-        $values = array_values($this->configurations['conjunctions']);
-        return ( in_array($length, $values) ) ? true : false;
-    }
-
+    /**
+     * Returns the proper conjunction for current digits' length
+     * @param $length
+     * @param string $return_value
+     * @return string
+     */
     function getConjunction($length, $return_value = " ")
     {
         $values = array_values($this->configurations['conjunctions']);
